@@ -46,8 +46,22 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>CSS 3D transforms - a very short introduction - by Bartek Szopka</title>
+    <title>Radiation and Activation with SoLID</title>
+
     
+    <meta name="description" content="Radiation and Activation with SoLID" />
+    <meta name="author" content="Lorenzo Zana" />
+    <script type="text/javascript"
+            src="http://cdn.mathjax.org/mathjax/latest/MathJax.js">
+      MathJax.Hub.Config({
+      jax: ["input/TeX","output/HTML-CSS"],
+      extensions: ["tex2jax.js"],
+      tex2jax: {
+      inlineMath: [['$','$'],['\\(','\\)']],
+      processEscapes: true
+      }
+      });
+    </script>
     <script>
         (function(d,ua){
             if ((ua.indexOf('chrome') > -1) || (ua.indexOf('safari') > -1 && ua.indexOf("mobile") === -1)) {
@@ -56,9 +70,6 @@
         })(document.documentElement, navigator.userAgent.toLowerCase());
     </script>
 
-    <meta name="description" content="Interactive presentation introducing CSS 3D transforms.">
-    <meta name="author" content="Bartek Szopka" />
-    
     <link href="http://fonts.googleapis.com/css?family=Ubuntu:700|Ubuntu+Mono|Crimson+Text:400,700,400italic" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
     <script src="js/prefixfree.js"></script>
@@ -80,7 +91,7 @@
     </h1>
     <span class="author">
         <i>by</i><br/>
-        <span class="name">Bartek Szopka</span> <a href="http://twitter.com/bartaz">@bartaz</a>
+        <span class="name">Lorenzo Zana</span> <a href="http://twitter.com/bartaz">@bartaz</a>
         <a class="cognifide" href="http://cognifide.com"><img src="img/cognifide.png" width="150" /></a>
     </span>
 

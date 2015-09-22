@@ -183,7 +183,7 @@ code.snippet .comment { font-size: 0.8em; color: #777; }
 #title h1 {
     font-weight: bold;
     text-align: center;
-    font-size: 6em;
+    font-size: 4em;
     line-height: 1;
 
     transform-style: preserve-3d;
@@ -202,7 +202,12 @@ code.snippet .comment { font-size: 0.8em; color: #777; }
 
     transform: translateZ(-50px);
 }
+#title h1 .d2 {
+    display: inline-block;
+    font-weight: normal;
 
+    transform: translateZ(-50px);
+}
 #title h1 .d3 {
     display: inline-block;
     transform: translateZ(20px);
@@ -218,7 +223,7 @@ code.snippet .comment { font-size: 0.8em; color: #777; }
 #title .author {
     display: block;
     width: 400px;
-    margin: -70px auto 0;
+    margin: -65px auto 0;
     text-align: center;
     font-weight: normal;
     line-height: 1.5;

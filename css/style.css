@@ -200,13 +200,14 @@ code.snippet .comment { font-size: 0.8em; color: #777; }
     font-weight: normal;
     font-size: 0.27em;
 
-    transform: translateZ(-50px);
+    transform: translateZ(0px);
 }
 #title h1 .d2 {
     display: inline-block;
     font-weight: normal;
 
     transform: translateZ(-50px);
+    transform: translateY(30px);
 }
 #title h1 .d3 {
     display: inline-block;

@@ -83,7 +83,7 @@
 
 <div id="impress">
 
-<div id="title" class="step" data-x="0" data-y="100" data-scale="0.9">
+<div id="title" class="step" data-x="0" data-y="170" data-scale="0.9">
     <h1>
         <span class="d2">Implementation</span>
         <span class="short">of</span><span class="transform">different</span>
@@ -100,17 +100,19 @@
 </div>
 
 
-<div id="transforms2d" class="step" data-x="-970" data-y="300" data-rotate="0" data-scale="0.3">
+<div id="fluka_prex1" class="step" data-x="-970" data-y="300" data-rotate="0" data-scale="0.3">
     <h1>Fluka simulation</h1>
     
     <h3><b>PREX</b> collaboration</h3>
     <ul>
       <li>Activation studies on the surrounding of the target</li>
       <li>Model of the Full Hall-A with Arms and target environment</li>
+      <li>Full simulation with magnetic field in FLUKA</li>
+      <li>Possibility of input spectrum as source beam</li>
     </ul>
 </div>
 
-<div id="transforms2d" class="step" data-x="-970" data-y="600" data-rotate="0" data-scale="0.3">
+<div id="fluka_prex2" class="step" data-x="-970" data-y="600" data-rotate="0" data-scale="0.3">
     <h4>Activation studies of area surrounding the target</h4>
     <ul>
       <li> PREX II early studies (not final design)</li>
@@ -121,7 +123,7 @@
 
 
 
-<div id="transforms2d" class="step" data-x="-970" data-y="900" data-rotate="0" data-scale="0.3">
+<div id="fluka_prex3" class="step" data-x="-970" data-y="900" data-rotate="0" data-scale="0.3">
     <h3>Model of Full Hall-A</h3>
     
     <img class="graph" src="https://www2.ph.ed.ac.uk/~lzana/PREX/Pictures/prex_sim_pictures/side_witharms.jpeg" alt="transform2d"/>
@@ -129,7 +131,7 @@
 
 
 
-<div id="transforms2d" class="step" data-x="-500" data-y="300" data-rotate="0" data-scale="0.3">
+<div id="fluka_solid1" class="step" data-x="-500" data-y="300" data-rotate="0" data-scale="0.3">
   <h1>Fluka simulation</h1>
         <h3><b>SoLID</b> collaboration</h3>
 	<ul>
@@ -141,25 +143,25 @@
     </ul>
 </div>
 
-<div id="transforms2d" class="step" data-x="-500" data-y="500" data-rotate="0" data-scale="0.2">
+<div id="fluka_solid2" class="step" data-x="-500" data-y="500" data-rotate="0" data-scale="0.2">
     <h3>SoLID in Full Hall-A</h3>
     
     <img class="graph" src="img/Solid-pics/SoLID_Hall.png" alt="transform2d"/>
 </div>
 
-<div id="transforms2d" class="step" data-x="-500" data-y="700" data-rotate="0" data-scale="0.2">
+<div id="fluka_solid3" class="step" data-x="-500" data-y="700" data-rotate="0" data-scale="0.2">
     <h3>SoLID comparing with design (here the CLEO coil)</h3>
     
     <img class="littlegraph" src="img/Solid-pics/SoLID_coil.png" alt="transform2d"/>
 </div>
 
-<div id="transforms2d" class="step" data-x="-500" data-y="900" data-rotate="0" data-scale="0.2">
+<div id="fluka_solid4" class="step" data-x="-500" data-y="900" data-rotate="0" data-scale="0.2">
     <h3>SoLID activation in first baffle (different materials) </h3>
     dose in $\left(\frac{mrem}{h}\right)$
     <img class="graph" src="img/Solid-pics/First_baffle_material.png" alt="transform2d"/>
 </div>
 
-<div id="transforms2d" class="step" data-x="-500" data-y="1100" data-rotate="0" data-scale="0.2">
+<div id="fluka_solid5" class="step" data-x="-500" data-y="1100" data-rotate="0" data-scale="0.2">
     <h3>SoLID activation in first baffle </h3>
     <ul>
       <li>on left Residual Nuclei for Lead Target after 1hour cooling (Z vs A) 
@@ -167,8 +169,10 @@
     </ul>
     <img class="littlegraph" src="img/Solid-pics/First_baffle_gamma_activation.png" alt="transform2d"/>
 </div>
-
-<div id="transforms2d" class="step" data-x="-500" data-y="1300" data-rotate="0" data-scale="0.2">
+<div id="fluka_solid5" class="step" data-x="-500" data-y="1100" data-rotate-x="90" data-scale="0.2">
+  <img class="graph" src="img/Solid-pics/First_baffle_gamma_activation.png" alt="transform2d"/>
+</div>
+<div id="fluka_solid6" class="step" data-x="-500" data-y="1300" data-rotate="0" data-scale="0.2">
     <h3>Activation study with SoLID </h3>
     <ul>
       <li> power deposited
@@ -176,9 +180,11 @@
     </ul>
     <img class="littlegraph" src="img/Solid-pics/SoLID_activation.png" alt="transform2d"/>
 </div>
+<div id="fluka_solid6" class="step" data-x="-500" data-y="1300" data-rotate-y="90" data-scale="0.2">
+    <img class="graph" src="img/Solid-pics/SoLID_activation.png" alt="transform2d"/>
+</div>
 
-
-<div id="transforms2d" class="step" data-x="500" data-y="300" data-rotate="0" data-scale="0.3">
+<div id="geant4_prex1" class="step" data-x="500" data-y="300" data-rotate="0" data-scale="0.3">
     <h1>GEANT4 simulation</h1>
     
     <h3><b>PREX</b> collaboration</h3>
@@ -189,25 +195,19 @@
     </ul>
 </div>
 
-<div id="transforms2d" class="step" data-x="500" data-y="500" data-rotate="0" data-scale="0.2">
-    <h3>PREX: Raytracer geom test</h3>
-    <video width="640" height="480" controls>
-      <source src="https://www2.ph.ed.ac.uk/~lzana/PREX/G4Video/prex_movie.mp4" type="video/mp4">
-    </video>
-</div>
 
-<div id="transforms2d" class="step" data-x="500" data-y="700" data-rotate="0" data-scale="0.2">
+<div id="geant4_prex3" class="step" data-x="500" data-y="700" data-rotate="0" data-scale="0.2">
     <h3>PREX: Vertex 1MeV equivalent radiation</h3>
     <img class="graph" src="https://www2.ph.ed.ac.uk/~lzana/PREX/Shield_study/pictures/anim_Scattering_chamber_vert_zy.gif" alt="transform2d"/>
 </div>
 
-<div id="transforms2d" class="step" data-x="500" data-y="900" data-rotate="0" data-scale="0.2">
+<div id="geant4_prex4" class="step" data-x="500" data-y="900" data-rotate="0" data-scale="0.2">
     <h3>PREX: Direction 1MeV equivalent radiation</h3>
     <img class="graph" src="https://www2.ph.ed.ac.uk/~lzana/PREX/Shield_study/pictures/anim_Scattering_chamber_NIEL_pl2.gif" alt="transform2d"/>
 </div>
 
 
-<div id="transforms2d" class="step" data-x="970" data-y="300" data-rotate="0" data-scale="0.3">
+<div id="geant4_solid1" class="step" data-x="970" data-y="300" data-rotate="0" data-scale="0.3">
   <h1>GEANT4 simulation</h1>
         <h3><b>SoLID</b> collaboration</h3>
 	<ul>
@@ -216,17 +216,17 @@
     </ul>
 </div>
 
-<div id="transforms2d" class="step" data-x="970" data-y="500" data-rotate="0" data-scale="0.2">
+<div id="geant4_solid2" class="step" data-x="970" data-y="500" data-rotate="0" data-scale="0.2">
     <h3>SoLID radiation on GEM</h3>
     <ul>
-      <li> 1MeV equivalent neutron radiation on GEM (using the same FLUKA conversion factors)
+      <li> 1MeV equivalent neutron radiation on GEM 
     </ul>
-    <img class="graph" src="img/Solid-pics/SoLID_GEM.png" alt="transform2d"/>
+    <img class="middlegraph" src="img/Solid-pics/SoLID_GEM.png" alt="transform2d"/>
 </div>
 
-<div id="transforms2d" class="step" data-x="0" data-y="250" data-z="100" data-rotate="0" data-scale="0.3">
+<div id="geant4_fluka1" class="step" data-x="0" data-y="250" data-z="100" data-rotate="0" data-scale="0.3">
   <h1>FLUKA + GEANT4 </h1>
-        <h3>Sometimes it is important to use both simulation to reach your result</h3>
+        <h4>Sometimes it is important to use both simulation to reach your result</h4>
 	<ul>
 	  <li> For example if you need to determine the activation from a part of equipment that is in proximity to anhighly activated material </li>
 	  <li> This was the case for PREX where one wanted to determing the activation of the materials in proximity of the highly activated collimator </li>
@@ -235,55 +235,56 @@
     </ul>
 </div>
 
-<div id="transforms2d" class="step" data-x="0" data-y="400" data-z="100" data-rotate="0" data-scale="0.2">
+<div id="geant4_fluka2" class="step" data-x="0" data-y="420" data-z="100" data-rotate="0" data-scale="0.15">
     <h3>FLUKA + GEANT4</h3>
     <ul>
       <li> The material in question of this study was the attachment surrounding the collimator </li>
       <li> Fluxes on the material was determined using GEANT4, since there was direct line on sight from the target (where GEANT4 gave more accurate description of the neutron fluxes) </li>
     </ul>
-    <img class="littlegraph" src="https://www2.ph.ed.ac.uk/~lzana/PREX/Sc_Attac/Selection_flux/imgs/geant4_flux_1bin.gif" alt="transform2d"/>
+</div>
+<div id="geant4_fluka2" class="step" data-x="0" data-y="400" data-z="100" data-rotate="0" data-rotate-x="90" data-scale="0.15">
+    <img class="middlegraph" src="https://www2.ph.ed.ac.uk/~lzana/PREX/Sc_Attac/Selection_flux/imgs/geant4_flux_1bin.gif" alt="transform2d"/>
 </div>
 
-<div id="transforms2d" class="step" data-x="0" data-y="550" data-z="100" data-rotate="0" data-scale="0.2">
+<div id="geant4_fluka3" class="step" data-x="0" data-y="550" data-z="100" data-rotate="0" data-scale="0.15">
     <h3>FLUKA + GEANT4</h3>
-    The flux has been characterized, depending on:
+    <b>The flux has been characterized</b>, depending on:
     <ul>
       <li> Particle id ($e^-,e^+,n,p,\gamma$) </li>
-      <li> Place of intersection with the Scattering Chamber Attachment surface (each area has been devided in smaller 5cm x 5cm part.) </li>
-      <li> Angle of intersection </li>
-      <li> Energy Spectrum </li>
+      <li> Place of intersection with the Scattering Chamber Attachment surface  </li>
+      <li> Angle of intersection and energy spectrum</li>
     </ul>
-    <h4>Information is then used for FLUKA simulation for activation studies</h4>
+    <h4><b>Information is then used in FLUKA simulation for activation studies</b></h4>
     <ul>
       <li> Can be used together to give a single answer </li>
       <li> Each particle contribution could be studied separately for improve shielding design to mitigate activation </li>
     </ul>
 </div>
 
-<div id="transforms2d" class="step" data-x="0" data-y="700" data-z="100" data-rotate="0" data-scale="0.2">
+<div id="geant4_fluka4" class="step" data-x="0" data-y="700" data-z="100" data-rotate="0" data-scale="0.15">
     <h3>FLUKA + GEANT4</h3>
     <ul>
       <li> TOGETHER: Comparison of different materials </li>
     </ul>
-    <img class="graph" src="https://www2.ph.ed.ac.uk/~lzana/PREX/Sc_Attac/1week/images/1w_full_scattach_0.png" alt="transform2d"/>
+    <img class="middlegraph" src="https://www2.ph.ed.ac.uk/~lzana/PREX/Sc_Attac/1week/images/1w_full_scattach_0.png" alt="transform2d"/>
 </div>
 
-<div id="transforms2d" class="step" data-x="0" data-y="850" data-z="100" data-rotate="0" data-scale="0.2">
+<div id="geant4_fluka5" class="step" data-x="0" data-y="830" data-z="100" data-rotate="0" data-scale="0.15">
     <h3>FLUKA + GEANT4</h3>
     <ul>
-      <li> SEPARATE: Comparison $\gamma$(left) vs neutron(right) activation </li>
+      <li> SEPARATE: Comparison $\gamma$(left) vs neutron(right) </li>
     </ul>
-    <img class="littlegraph" src="https://www2.ph.ed.ac.uk/~lzana/PREX/Sc_Attac/Comparison/images/1w_gamma_al.png" alt="transform2d"/>
-    <img class="littlegraph" src="https://www2.ph.ed.ac.uk/~lzana/PREX/Sc_Attac/Comparison/images/1w_neutron_al.png" alt="transform2d"/>
+    <img class="littlegraph" src="https://www2.ph.ed.ac.uk/~lzana/PREX/Sc_Attac/Comparison/images/1w_gamma_al.png" alt="geant4_fluka5"/>
+    <img class="littlegraph" src="https://www2.ph.ed.ac.uk/~lzana/PREX/Sc_Attac/Comparison/images/1w_neutron_al.png" alt="geant4_fluka5"/>
     
 </div>
 
 
-<div id="end" class="step" data-x="0" data-y="500" data-rotate="0" data-scale="2">
+<div id="end" class="step" data-x="0" data-y="700" data-rotate="0" data-scale="2">
     <span class="author">
         <i>by</i><br/>
         <span class="name">Lorenzo Zana</span> <a href="http://www2.ph.ed.ac.uk/~lzana/">@lorenzozana</a>
-        <a class="cognifide" href="http://www2.ph.ed.ac.uk/nuclear/"><img src="img/1017px-University_of_Edinburgh_logo.svg.png" width="200" /></a>
+        <a class="cognifide" href="http://www2.ph.ed.ac.uk/nuclear/"><img src="img/1017px-University_of_Edinburgh_logo.svg.png" width="100" /></a>
     </span>
 </div>
 

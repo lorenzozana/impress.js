@@ -46,10 +46,10 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>Presentations and Public Engagement with css3D</title>
+    <title>Implementation of different simulation packages for radiation estimates at Jlab</title>
 
     
-    <meta name="description" content="Presentations and Public Engagement with css3D" />
+    <meta name="description" content="Implementation of different simulation packages for radiation estimates at Jlab" />
     <meta name="author" content="Lorenzo Zana" />
     <script type="text/javascript"
             src="http://cdn.mathjax.org/mathjax/latest/MathJax.js">
@@ -83,11 +83,12 @@
 
 <div id="impress">
 
-<div id="title" class="step">
+<div id="title" class="step" data-x="0" data-y="100" data-scale="0.9">
     <h1>
-        <span class="d2">Presentations</span>
-        <span class="short">and</span><span class="d3">Public Engagement</span>
-        <span class="transforms">with css3D</span>
+        <span class="d2">Implementation</span>
+        <span class="short">of</span><span class="transform">different</span>
+        <span class="d3">simulation packages</span>
+	<span class="short">for</span><span class="transform">radiation estimates at Jlab</span>
     </h1>
     <span class="author">
         <i>by</i><br/>
@@ -99,254 +100,183 @@
 </div>
 
 
-<div id="transforms2d" class="step" data-x="-620" data-y="500" data-rotate="90" data-scale="0.5">
-    <h2>2D transforms</h2>
+<div id="transforms2d" class="step" data-x="-970" data-y="300" data-rotate="0" data-scale="0.3">
+    <h1>Fluka simulation</h1>
     
-    <div class="face target">
-        2D
-        <span class="axis x"></span>
-        <span class="axis y"></span>
-    </div>
-
-    <code class="snippet">
-        transform:
-        <span class="code" data-property="transform">
-        <span class="switch disabled">translate(200px,100px)</span><br/>
-        <span class="indent">          </span>
-        <span class="switch">rotate(45deg)</span><br/>
-        <span class="indent">          </span>
-        <span class="switch disabled">scale(2)</span><br/>
-        <span class="indent">          </span>
-        <span class="switch">skew(30deg)</span><br/>
-        <span class="indent">          </span>
-        <span class="switch disabled">matrix(-1,0,0,1,0,0)</span></span>;
-    </code>
-</div>
-
-<div id="transforms3d" class="step" data-x="-30" data-y="540" data-rotate="190" data-scale="0.6">
-
-    <h2>3D transforms</h2>
-    
-    <div class="face target">
-        3D
-        <span class="axis x"></span>
-        <span class="axis y"></span>
-        <span class="axis z"></span>
-    </div>
-    
-    <code class="snippet">
-        transform: <br/>
-        <span class="code" data-property="transform">
-            <span class="indent">   </span>
-            <label for="transform3d-perspective-slider" class="switch slider">
-                perspective(<span class="val">600</span>px)
-                <input type="range" id="transform3d-perspective-slider" min="200" max="2000" value="600" />
-            </label>
-            <br/>
-            
-            <span class="indent">   </span>
-            <label for="transform3d-translateX-slider" class="switch slider">
-                translateX(<span class="val">-100</span>px)
-                <input type="range" id="transform3d-translateX-slider" min="-500" max="500" value="-100" />
-            </label>
-            <label for="transform3d-translateY-slider" class="switch disabled slider">
-                translateY(<span class="val">100</span>px)
-                <input type="range" id="transform3d-translateY-slider" min="-200" max="200" value="100" />
-            </label>
-            <label for="transform3d-translateZ-slider" class="switch disabled slider">
-                translateZ(<span class="val">100</span>px)
-                <input type="range" id="transform3d-translateZ-slider" min="-500" max="500" value="100" />
-            </label>
-            <br/>
-            
-            <span class="indent">   </span>
-            <label for="transform3d-rotateX-slider" class="switch slider">
-                rotateX(<span class="val">60</span>deg)
-                <input type="range" id="transform3d-rotateX-slider" min="0" max="360" value="60" />
-            </label> 
-            <label for="transform3d-rotateY-slider" class="switch disabled slider">
-                rotateY(<span class="val">90</span>deg)
-                <input type="range" id="transform3d-rotateY-slider" min="0" max="360" value="90" />
-            </label>
-            <label for="transform3d-rotateZ-slider" class="switch disabled slider">
-                rotateZ(<span class="val">30</span>deg)
-                <input type="range" id="transform3d-rotateZ-slider" min="0" max="360" value="30" />
-            </label>
-            <br/>
-        
-            <span class="indent">   </span>
-            <label for="transform3d-rotate3d-slider" class="switch disabled slider">
-                rotate3d(1,1,0,<span class="val">60</span>deg)
-                <input type="range" id="transform3d-rotate3d-slider" min="0" max="360" value="60" />
-            </label>
-            <br/>
-        
-            <span class="indent">   </span>
-            <label for="transform3d-scaleX-slider" class="switch disabled slider">
-                scaleX(<span class="val">0.5</span>)
-                <input type="range" id="transform3d-scaleX-slider" min="-10" max="20" value="5" step="1" data-divider="10" data-pad="4"/>
-            </label>
-            <label for="transform3d-scaleY-slider" class="switch disabled slider">
-                scaleY(<span class="val">0.5</span>)
-                <input type="range" id="transform3d-scaleY-slider" min="-10" max="20" value="5" step="1" data-divider="10" />
-            </label>
-            <label for="transform3d-scaleZ-slider" class="switch disabled slider">
-                scaleZ(<span class="val">0.5</span>)<input type="range" id="transform3d-scaleZ-slider" min="-10" max="20" value="5" step="1" data-divider="10" /></label></span>;
-    </code>
-</div>
-
-<div id="perspective" class="step" data-x="450" data-y="250" data-rotate="100" data-scale="0.25">
-    <h2>Perspective</h2>
-    
-    <div class="scene target">
-        <div class="cross"></div>
-        
-        <div class="box">
-            <div class="top"></div>
-            <div class="left"></div>
-            <div class="right"></div>
-            <div class="bottom"></div>
-        </div>
-        
-        <div class="box">
-            <div class="top"></div>
-            <div class="left"></div>
-            <div class="right"></div>
-            <div class="bottom"></div>
-        </div>
-    </div>
-
-    <code class="snippet">
-        .scene {<br/>
-            <span class="indent">   </span>
-            <span class="code" data-property="perspective">
-            <label for="scene-perspective-slider" class="slider switch">
-            <span class="ignore">perspective:</span>
-                <span class="val">1000</span>px<input id="scene-perspective-slider" type="range" max="2000" min="200" value="1000"/>
-            </label>
-            </span>;
-            <br/>
-            <span class="indent">   </span>
-            <span class="origin">perspective-origin: <span class="value">50% 50%</span>;</span><br/>
-        }
-        <br/>
-        .box {<br/>
-            <span class="indent">   </span>
-            transform:
-            <span class="code" data-property="transform" data-selector=".box">
-            <label for="box-perspective-slider" class="switch disabled slider">
-                perspective(<span class="val">600</span>px)
-                <input type="range" id="box-perspective-slider" min="200" max="2000" value="600" />
-            </label>
-            </span>
-            <br/>
-        }
-    </code>
-
-</div>
-
-<div id="transforms3d-cube" class="step" data-x="670" data-y="700" data-rotate="10" data-scale="0.6">
-    
-    <div class="cube target">
-        <div class="face">front</div>
-        <div class="face">back</div>
-        <div class="face">left</div>
-        <div class="face">right</div>
-        <div class="face">top</div>
-        <div class="face">bottom</div>
-    </div>
-    
-    <div class="flip">
-        <code class="snippet">
-            .cube { <br/>
-            <span class="indent">   </span>
-            transform: 
-            <span class="code" data-property="transform">
-                <label for="transform3d-cube-perspective-slider" class="switch slider">
-                    perspective(<span class="val">600</span>px)
-                    <input type="range" id="transform3d-cube-perspective-slider" min="200" max="2000" value="600" />
-                </label>
-                <br/>
-                
-                <span class="indent">       </span>
-                <label for="transform3d-cube-rotateX-slider" class="switch slider">
-                    rotateX(<span class="val">330</span>deg)
-                    <input type="range" id="transform3d-cube-rotateX-slider" min="0" max="360" value="330" />
-                </label> 
-                <label for="transform3d-cube-rotateY-slider" class="switch slider">
-                    rotateY(<span class="val">320</span>deg)
-                    <input type="range" id="transform3d-cube-rotateY-slider" min="0" max="360" value="320" />
-                </label>
-                <label for="transform3d-cube-rotateZ-slider" class="switch slider">
-                    rotateZ(<span class="val">0</span>deg)<input type="range" id="transform3d-cube-rotateZ-slider" min="0" max="360" value="0" /></label></span>;
-            <br/>
-            
-            <span class="indent">   </span>
-            transform-style: <span class="code" data-property="transformStyle"><span class="switch">preserve-3d</span></span>;
-                <span class="comment">/* default: `flat` */</span><br/>
-            }<br/><br/>
-            
-            
-            .face {<br/>
-                <span class="indent">   </span>
-                <label for="transform3d-cube-opacity-slider" class="slider">
-                    opacity: <span class="code" data-property="opacity" data-selector=".face"><span class="val">0.5</span><input type="range" id="transform3d-cube-opacity-slider" min="1" max="10" value="5" step="1" data-divider="10" /></span>;
-                </label><br/>
-            
-            <span class="indent">   </span>
-            backface-visibility: <span class="code" data-property="backfaceVisibility" data-selector=".face"><span class="switch disabled">hidden</span></span>;
-                <span class="comment">/* default: `visible` */</span><br/>
-            }
-        </code>
-        
-        <code class="snippet back">
-            &lt;div class="<span class="cube-flat switch">cube</span>"&gt;<br/>
-            <span class="indent">   </span>&lt;div class="face"&gt;front&lt;/div&gt;<span class="indent"> </span>
-                <span class="comment"><span class="indent">               </span> translateZ(100px)</span><br/>
-            <span class="indent">   </span>&lt;div class="face"&gt;back&lt;/div&gt;<span class="indent">  </span>
-                <span class="comment">rotateY(180deg) translateZ(100px)</span><br/>
-            <span class="indent">   </span>&lt;div class="face"&gt;left&lt;/div&gt;<span class="indent">  </span>
-                <span class="comment">rotateY(-90deg) translateZ(100px)</span><br/>
-            <span class="indent">   </span>&lt;div class="face"&gt;right&lt;/div&gt;<span class="indent"> </span>
-                <span class="comment">rotateY( 90deg) translateZ(100px)</span><br/>
-            <span class="indent">   </span>&lt;div class="face"&gt;top&lt;/div&gt;<span class="indent">   </span>
-                <span class="comment">rotateX( 90deg) translateZ(100px)</span><br/>
-            <span class="indent">   </span>&lt;div class="face"&gt;bottom&lt;/div&gt;<span class="indent"></span>
-                <span class="comment">rotateX(-90deg) translateZ(100px)</span><br/>
-            &lt;/div&gt;
-        </code>
-    </div>
-
-</div>
-
-<div id="remember" class="step" data-x="750" data-y="70" data-rotate="30" data-scale="0.4">
-    <h2>Remember</h2>
-    
-    <h3>It is <b>not</b> a <b>3D engine</b></h3>
+    <h3><b>PREX</b> collaboration</h3>
     <ul>
-        <li>there is <b>no single coordinate system</b></li>
-        <li>there is <b>no camera, light, etc.</b></li>
-        <li>videos and images are <b>easy to show</b></li>
-	<li>Formulas are easy $i\hbar \frac{\partial \Psi}{\partial t} = -\frac{\hbar^2}{2m} \frac{\partial^2 \Psi}{\partial x^2} + V \Psi$</li>
+      <li>Activation studies on the surrounding of the target</li>
+      <li>Model of the Full Hall-A with Arms and target environment</li>
     </ul>
 </div>
 
-<div id="demos" class="step" data-x="950" data-y="300" data-rotate="-60" data-scale="0.2">
-    <h2>demos</h2>
-    
-    <h3>...and, you can build interesting stuff</h3>
-    <p>
-        <a href="http://css-vfx.googlecode.com/svn/trunk/snowstack/snowstack.html">SnowStack Gallery</a>,
-        <a href="http://www.apple.com/html5/showcase/transitions/">Apple CSS3 Transitions Showcase</a>,
-        <a href="http://www.paulrhayes.com/experiments/sphere/">3D Sphere</a>,
-        <a href="http://www.keithclark.co.uk/labs/3dcss/demo/">CSS 3D FPS Concept</a>,
-        <a href="http://cubiq.org/building-a-pure-css-3d-city">Pure CSS 3D City</a>,
-        <a href="http://www.google.com/search?q=CSS+3d+demos">and many more...</a>
-    </p>
+<div id="transforms2d" class="step" data-x="-970" data-y="600" data-rotate="0" data-scale="0.3">
+    <h4>Activation studies of area surrounding the target</h4>
+    <ul>
+      <li> PREX II early studies (not final design)</li>
+      <li> dose in $\left(\frac{mrem}{h}\right)$</li>
+    </ul>
+    <img class="littlegraph" src="https://www2.ph.ed.ac.uk/~lzana/PREX/Sc_Attac/Full_design/images/1w_fulldesign_side_ss.png" alt="transform2d"/>
 </div>
 
 
 
+<div id="transforms2d" class="step" data-x="-970" data-y="900" data-rotate="0" data-scale="0.3">
+    <h3>Model of Full Hall-A</h3>
+    
+    <img class="graph" src="https://www2.ph.ed.ac.uk/~lzana/PREX/Pictures/prex_sim_pictures/side_witharms.jpeg" alt="transform2d"/>
+</div>
+
+
+
+<div id="transforms2d" class="step" data-x="-500" data-y="300" data-rotate="0" data-scale="0.3">
+  <h1>Fluka simulation</h1>
+        <h3><b>SoLID</b> collaboration</h3>
+	<ul>
+	  <li>Responsible for Radiation and activation studies for the collaboration</li>
+	  <li>Passed scrutiny of different panels for internal review</li> 
+	  <li>Defended the project in front of an international panel at the Director Review</li>
+	  <li>Answered all the question arised from the different panels in the latest version of the document (<a href="http://hallaweb.jlab.org/12GeV/SoLID/download/doc/solid_precdr_2017.pdf">here the official document</a> my contribution from page 180)</li>
+	</ul>
+    </ul>
+</div>
+
+<div id="transforms2d" class="step" data-x="-500" data-y="500" data-rotate="0" data-scale="0.2">
+    <h3>SoLID in Full Hall-A</h3>
+    
+    <img class="graph" src="img/Solid-pics/SoLID_Hall.png" alt="transform2d"/>
+</div>
+
+<div id="transforms2d" class="step" data-x="-500" data-y="700" data-rotate="0" data-scale="0.2">
+    <h3>SoLID comparing with design (here the CLEO coil)</h3>
+    
+    <img class="littlegraph" src="img/Solid-pics/SoLID_coil.png" alt="transform2d"/>
+</div>
+
+<div id="transforms2d" class="step" data-x="-500" data-y="900" data-rotate="0" data-scale="0.2">
+    <h3>SoLID activation in first baffle (different materials) </h3>
+    dose in $\left(\frac{mrem}{h}\right)$
+    <img class="graph" src="img/Solid-pics/First_baffle_material.png" alt="transform2d"/>
+</div>
+
+<div id="transforms2d" class="step" data-x="-500" data-y="1100" data-rotate="0" data-scale="0.2">
+    <h3>SoLID activation in first baffle </h3>
+    <ul>
+      <li>on left Residual Nuclei for Lead Target after 1hour cooling (Z vs A) 
+      <li>on right $\gamma$ spectrum in Curie at 2 different cooling times</li>
+    </ul>
+    <img class="littlegraph" src="img/Solid-pics/First_baffle_gamma_activation.png" alt="transform2d"/>
+</div>
+
+<div id="transforms2d" class="step" data-x="-500" data-y="1300" data-rotate="0" data-scale="0.2">
+    <h3>Activation study with SoLID </h3>
+    <ul>
+      <li> power deposited
+      <li> dose in $\left(\frac{mrem}{h}\right)$
+    </ul>
+    <img class="littlegraph" src="img/Solid-pics/SoLID_activation.png" alt="transform2d"/>
+</div>
+
+
+<div id="transforms2d" class="step" data-x="500" data-y="300" data-rotate="0" data-scale="0.3">
+    <h1>GEANT4 simulation</h1>
+    
+    <h3><b>PREX</b> collaboration</h3>
+    <ul>
+      <li>Simulation </li>
+      <li>1MeV neutron equivalent studies for radiation inside the Hall</li>
+      <li>Model of the Full Hall-A with Arms and target environment</li>
+    </ul>
+</div>
+
+<div id="transforms2d" class="step" data-x="500" data-y="500" data-rotate="0" data-scale="0.2">
+    <h3>PREX: Raytracer geom test</h3>
+    <video width="640" height="480" controls>
+      <source src="https://www2.ph.ed.ac.uk/~lzana/PREX/G4Video/prex_movie.mp4" type="video/mp4">
+    </video>
+</div>
+
+<div id="transforms2d" class="step" data-x="500" data-y="700" data-rotate="0" data-scale="0.2">
+    <h3>PREX: Vertex 1MeV equivalent radiation</h3>
+    <img class="graph" src="https://www2.ph.ed.ac.uk/~lzana/PREX/Shield_study/pictures/anim_Scattering_chamber_vert_zy.gif" alt="transform2d"/>
+</div>
+
+<div id="transforms2d" class="step" data-x="500" data-y="900" data-rotate="0" data-scale="0.2">
+    <h3>PREX: Direction 1MeV equivalent radiation</h3>
+    <img class="graph" src="https://www2.ph.ed.ac.uk/~lzana/PREX/Shield_study/pictures/anim_Scattering_chamber_NIEL_pl2.gif" alt="transform2d"/>
+</div>
+
+
+<div id="transforms2d" class="step" data-x="970" data-y="300" data-rotate="0" data-scale="0.3">
+  <h1>GEANT4 simulation</h1>
+        <h3><b>SoLID</b> collaboration</h3>
+	<ul>
+	  <li> 1MeV equivalent neutron radiation on GEM
+	</ul>
+    </ul>
+</div>
+
+<div id="transforms2d" class="step" data-x="970" data-y="500" data-rotate="0" data-scale="0.2">
+    <h3>SoLID radiation on GEM</h3>
+    <ul>
+      <li> 1MeV equivalent neutron radiation on GEM (using the same FLUKA conversion factors)
+    </ul>
+    <img class="graph" src="img/Solid-pics/SoLID_GEM.png" alt="transform2d"/>
+</div>
+
+<div id="transforms2d" class="step" data-x="0" data-y="250" data-z="100" data-rotate="0" data-scale="0.3">
+  <h1>FLUKA + GEANT4 </h1>
+        <h3>Sometimes it is important to use both simulation to reach your result</h3>
+	<ul>
+	  <li> For example if you need to determine the activation from a part of equipment that is in proximity to anhighly activated material </li>
+	  <li> This was the case for PREX where one wanted to determing the activation of the materials in proximity of the highly activated collimator </li>
+	  <li> FLUKA is the best program for activation studies, but lacks the possibility to remove some material at a later time for activation purposes </li>
+	</ul>
+    </ul>
+</div>
+
+<div id="transforms2d" class="step" data-x="0" data-y="400" data-z="100" data-rotate="0" data-scale="0.2">
+    <h3>FLUKA + GEANT4</h3>
+    <ul>
+      <li> The material in question of this study was the attachment surrounding the collimator </li>
+      <li> Fluxes on the material was determined using GEANT4, since there was direct line on sight from the target (where GEANT4 gave more accurate description of the neutron fluxes) </li>
+    </ul>
+    <img class="littlegraph" src="https://www2.ph.ed.ac.uk/~lzana/PREX/Sc_Attac/Selection_flux/imgs/geant4_flux_1bin.gif" alt="transform2d"/>
+</div>
+
+<div id="transforms2d" class="step" data-x="0" data-y="550" data-z="100" data-rotate="0" data-scale="0.2">
+    <h3>FLUKA + GEANT4</h3>
+    The flux has been characterized, depending on:
+    <ul>
+      <li> Particle id ($e^-,e^+,n,p,\gamma$) </li>
+      <li> Place of intersection with the Scattering Chamber Attachment surface (each area has been devided in smaller 5cm x 5cm part.) </li>
+      <li> Angle of intersection </li>
+      <li> Energy Spectrum </li>
+    </ul>
+    <h4>Information is then used for FLUKA simulation for activation studies</h4>
+    <ul>
+      <li> Can be used together to give a single answer </li>
+      <li> Each particle contribution could be studied separately for improve shielding design to mitigate activation </li>
+    </ul>
+</div>
+
+<div id="transforms2d" class="step" data-x="0" data-y="700" data-z="100" data-rotate="0" data-scale="0.2">
+    <h3>FLUKA + GEANT4</h3>
+    <ul>
+      <li> TOGETHER: Comparison of different materials </li>
+    </ul>
+    <img class="graph" src="https://www2.ph.ed.ac.uk/~lzana/PREX/Sc_Attac/1week/images/1w_full_scattach_0.png" alt="transform2d"/>
+</div>
+
+<div id="transforms2d" class="step" data-x="0" data-y="850" data-z="100" data-rotate="0" data-scale="0.2">
+    <h3>FLUKA + GEANT4</h3>
+    <ul>
+      <li> SEPARATE: Comparison $\gamma$(left) vs neutron(right) activation </li>
+    </ul>
+    <img class="littlegraph" src="https://www2.ph.ed.ac.uk/~lzana/PREX/Sc_Attac/Comparison/images/1w_gamma_al.png" alt="transform2d"/>
+    <img class="littlegraph" src="https://www2.ph.ed.ac.uk/~lzana/PREX/Sc_Attac/Comparison/images/1w_neutron_al.png" alt="transform2d"/>
+    
+</div>
 
 
 <div id="end" class="step" data-x="0" data-y="500" data-rotate="0" data-scale="2">

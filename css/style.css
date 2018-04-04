@@ -141,7 +141,6 @@ code.snippet .comment { font-size: 0.8em; color: #777; }
 
 .step h3 {
     font-size: 2.5em;
-    text-transform: lowercase;
     margin-bottom: 0.2em;
 }
 
@@ -183,15 +182,15 @@ code.snippet .comment { font-size: 0.8em; color: #777; }
 #title h1 {
     font-weight: bold;
     text-align: center;
-    font-size: 4em;
+    font-size: 2em;
     line-height: 1;
 
     transform-style: preserve-3d;
-    animation: rotate-h1 2s infinite alternate ease-in-out;
+    animation: rotate-h1 4s infinite alternate ease-in-out;
 
-    transform: perspective(1000px) rotateY(0deg);
+    transform: perspective(4000px) rotateY(45deg);
 
-    transition: all 2s ease-in-out;
+    transition: all 4s ease-in-out;
 }
 
 #title h1 .short {
@@ -200,31 +199,32 @@ code.snippet .comment { font-size: 0.8em; color: #777; }
     font-weight: normal;
     font-size: 0.27em;
 
-    transform: translateZ(0px);
+    transform: translateZ(-25px);
 }
 #title h1 .d2 {
     display: inline-block;
     font-weight: normal;
 
     transform: translateZ(-50px);
-    transform: translateY(30px);
+    transform: translateY(-10px);
 }
 #title h1 .d3 {
     display: inline-block;
-    transform: translateZ(20px);
+    transform: translateZ(0px);
 }
 
 #title h1 .transforms {
     display: inline-block;
     font-weight: normal;
     font-size: 0.6em;
-    transform: translateY(-0.6em) translateZ(50px);
+    transform: translateY(-0.6em) 
+    transform: translateZ(50px);
 }
 
 #title .author {
     display: block;
     width: 400px;
-    margin: -65px auto 0;
+    margin: 65px auto 0;
     text-align: center;
     font-weight: normal;
     line-height: 1.5;
@@ -397,12 +397,30 @@ code.snippet .comment { font-size: 0.8em; color: #777; }
 
 
 
-#transforms2d { width: 600px }
+#transforms2d { width: 940px }
 
 #transforms2d .face { background: rgba(  0,153,255,1); }
 
-#transforms2d h2 { font-size: 3.5em; }
+#transforms2d h2 { font-size: 1.5em; }
 
+#transforms2d h1 { 
+    
+    font-size: 3.5em; 
+    animation: rotate-h1 4s infinite alternate ease-in-out;
+    transform: translateZ(25px);
+
+}
+
+#transforms2d h4 { font-size: 1.5em; }
+.graph {
+    height:  100%;
+    width:   100%;
+}
+
+.littlegraph {
+    height:  50%;
+    width:   50%;
+}
 
 
 
